@@ -6,7 +6,7 @@
 
 <generatorConfiguration>
     <classPathEntry
-            location="/Users/anna.khvorostyanova/.m2/repository/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar"/>
+            location="postgresql-42.3.1.jar"/>
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
         <jdbcConnection driverClass="org.postgresql.Driver"
