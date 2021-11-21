@@ -2,10 +2,7 @@ package ru.annachemic.service;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.GET;
-import retrofit2.http.POST;
-import retrofit2.http.Path;
+import retrofit2.http.*;
 import ru.annachemic.dto.Product;
 
 import java.util.ArrayList;
@@ -19,4 +16,10 @@ public interface ProductService {
 
     @POST("products")
     Call<Product> createProduct(@Body Product product);
+
+    @PUT("products")
+    Call<Product> updateProduct(@Body Product updateProductRequest);
+
+    @DELETE("products/{id}")
+    Call<ResponseBody> deleteProduct(@Path("id") Integer id);
 }
