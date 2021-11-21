@@ -10,7 +10,8 @@ import java.time.Duration;
 
 @UtilityClass
 public class RetrofitUtils {
-     HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+    HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+
     public Retrofit getRetrofit() {
         OkHttpClient client = new OkHttpClient.Builder()
                 .connectTimeout(Duration.ofMinutes(1l))

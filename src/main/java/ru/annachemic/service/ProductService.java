@@ -17,6 +17,9 @@ public interface ProductService {
     @POST("products")
     Call<Product> createProduct(@Body Product product);
 
+    @PUT("products")
+    Call<Product> updateProduct(@Body Product updateProductRequest);
+
     @DELETE("products/{id}")
     Call<ResponseBody> deleteProduct(@Path("id") Integer id);
 }

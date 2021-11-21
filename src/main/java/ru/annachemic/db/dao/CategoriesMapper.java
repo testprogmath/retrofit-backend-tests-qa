@@ -1,9 +1,10 @@
 package ru.annachemic.db.dao;
 
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import ru.annachemic.db.model.Categories;
 import ru.annachemic.db.model.CategoriesExample;
+
+import java.util.List;
 
 public interface CategoriesMapper {
     /**

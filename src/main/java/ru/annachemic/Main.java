@@ -11,10 +11,11 @@ import ru.annachemic.db.model.Categories;
 import ru.annachemic.db.model.CategoriesExample;
 
 import java.io.IOException;
+
 @Slf4j
 public class Main {
     static Faker faker = new Faker();
-    private static String resource = "mybatisConfig.xml";
+    private static final String resource = "mybatisConfig.xml";
 
     public static void main(String[] args) throws IOException {
         SqlSession sqlSession = getSqlSession();
